@@ -1,0 +1,19 @@
+/* Custom Font */
+@font-face {
+  font-family: 'MyBrandFont';
+  src: url('/design-system/assets/MyBrandFont.woff2') format('woff2');
+}
+
+/* Titels */
+h1 {
+  font-family: 'MyBrandFont', sans-serif;
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
