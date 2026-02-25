@@ -4,5 +4,5 @@ Develop a clear, distinctive and scalable visual identity system tailored to dig
 
 ## Sections
 
-- Design System
-- Applications
+- [Design System](design-system/)
+- [Applications](applications/)
