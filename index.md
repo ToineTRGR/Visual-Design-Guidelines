@@ -2,7 +2,7 @@
 
 Develop a clear, distinctive and scalable visual identity system tailored to digital-first application.
 
-## Sections
+## Content
 
 - [Colors](design-system/colors.md)
 - [Typography](design-system/typography.md)
