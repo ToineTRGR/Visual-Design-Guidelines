@@ -4,5 +4,6 @@ Develop a clear, distinctive and scalable visual identity system tailored to dig
 
 ## Sections
 
-- [Design System](design-system/)
+- [Colors](design-system/colors.md)
+- [Typography](design-system/typography.md)
 - [Applications](applications/)
