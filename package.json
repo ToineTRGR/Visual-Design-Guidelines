@@ -1,0 +1,10 @@
+{
+  "name": "design-system",
+  "private": true,
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  },
+  "scripts": {
+    "docs:build": "vitepress build docs"
+  }
+}
