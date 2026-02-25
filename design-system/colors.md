@@ -1,3 +1,3 @@
-# Typography
+# Colors
 
-This is the typography system.
+This is the colors system.
