@@ -8,6 +8,8 @@ export default {
         text: "Design System",
         items: [
           { text: "Overview", link: "/design-system/" }
+          { text: "Colors", link: "/design-system/colors" },
+          { text: "Typography", link: "/design-system/typography" }
         ]
       }
     ]
