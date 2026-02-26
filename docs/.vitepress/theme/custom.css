@@ -1,1 +1,119 @@
+/* docs/.vitepress/theme/custom.css */
 
+/* 
+  GLOBAL THEME
+  - Zet de algemene kleuren (background + text) en basis typografie.
+  - Alles blijft VitePress-native, maar in jouw gewenste darkmode.
+*/
+:root {
+  --bg: #1e1e1e;
+  --text: #ffffff;
+
+  /* VitePress tokens (globaal) */
+  --vp-c-bg: var(--bg);
+  --vp-c-bg-alt: #161616;
+  --vp-c-bg-elv: #222222;
+  --vp-c-bg-soft: #242424;
+
+  --vp-c-text-1: var(--text);
+  --vp-c-text-2: rgba(255, 255, 255, 0.8);
+  --vp-c-text-3: rgba(255, 255, 255, 0.6);
+
+  /* Links / accent (pas aan naar je brandkleur) */
+  --vp-c-brand-1: #ffd200;
+  --vp-c-brand-2: #ffdf4d;
+
+  /* Border kleuren */
+  --vp-c-border: rgba(255, 255, 255, 0.12);
+  --vp-c-divider: rgba(255, 255, 255, 0.12);
+}
+
+/*
+  LAYOUT
+  - Sidebar styling en algemene content styling.
+  - Doel: rustig, strak, goed leesbaar.
+*/
+.VPApp {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.VPSidebar {
+  background: var(--vp-c-bg-alt);
+  border-right: 1px solid var(--vp-c-border);
+}
+
+/* Sidebar item states */
+.VPSidebarItem .text {
+  color: var(--vp-c-text-2);
+}
+.VPSidebarItem.is-active .text,
+.VPSidebarItem:hover .text {
+  color: var(--vp-c-text-1);
+}
+
+/*
+  TOP BAR / “BREADCRUMB” AREA (OPTIONEEL)
+  - VitePress heeft standaard topnav. 
+  - Deze rules geven je ruimte voor een subtiele ‘breadcrumb-like’ header in content.
+  - Gebruik in Markdown: 
+    > <div class="breadcrumb">Design System / Typography</div>
+*/
+.breadcrumb {
+  font-size: 13px;
+  color: var(--vp-c-text-3);
+  margin: 0 0 12px 0;
+  padding: 10px 12px;
+  border: 1px solid var(--vp-c-border);
+  background: var(--vp-c-bg-soft);
+  border-radius: 10px;
+}
+
+/*
+  CONTENT TYPOGRAPHY
+  - Basis headline/body tuning voor guidelines.
+  - Pas waarden aan aan je type scale.
+*/
+.VPDoc h1 {
+  color: var(--vp-c-text-1);
+  font-size: 42px; /* pas aan */
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.VPDoc h2 {
+  color: var(--vp-c-text-1);
+  font-size: 28px; /* pas aan */
+  line-height: 1.2;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+.VPDoc p,
+.VPDoc li {
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+}
+
+/*
+  CARDS / CALLOUTS (HANDIG VOOR DO/DON'T)
+  - Gebruik als snelle “component” in Markdown met een div.
+*/
+.guideline-card {
+  border: 1px solid var(--vp-c-border);
+  background: var(--vp-c-bg-soft);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin: 14px 0;
+}
+
+.guideline-card .title {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--vp-c-text-1);
+}
+
+.guideline-card.is-do {
+  border-color: rgba(0, 255, 150, 0.25);
+}
+.guideline-card.is-dont {
+  border-color: rgba(255, 80, 80, 0.35);
+}
